@@ -1,0 +1,102 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*,cover
+.hypothesis/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+#Ipython Notebook
+.ipynb_checkpoints
+
+*.swp
+*.sqlite3
+/collected_static/
+/media/
+/temp/
+settings_deploy.py
+*Report*.html
+result.txt
+result.html
+*.*~
+test.html
+profile
+celeryd.pid
+venv/
+
+.DS_Store
+Thumbs.db
+.idea/
+initialized
+.python-version
+mecab-*.tar.gz
+mecab-python*
+mecab-*/
+.vscode/
+*/docker_base_image/requirements.txt
+*/docker_base_image/test-requirements.txt
+*/docker_base_image/dev-requirements.txt
+dfy/
+_backup/
+html/
+client_build/
+_test.py
+msg-server/
+celerybeat.pid
+prof/
+base/admins.py/
+celerybeat-schedule.*
+file_log.txt
+.pytest_cache/
