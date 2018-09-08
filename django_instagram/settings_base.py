@@ -34,13 +34,14 @@ DJANGO_APPS = [
 
 THIRD_PARTY_APPS = [
     'rest_framework',
+    'taggit',
 ]
 
 LOCAL_APPS = [
     'account',
     'base',
     'image',
-    'taggit'
+    'notification'
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
