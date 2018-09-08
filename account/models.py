@@ -21,3 +21,22 @@ class User(TimeStampedModel, AbstractUser):
     following = models.ManyToManyField("self", related_name="+")
     follower = models.ManyToManyField("self", related_name="+")
     profile_image = models.ImageField(null=True)
+
+    def __str__(self):
+        return self.username
+
+    @property
+    def followers_count(self):
+        return self.follower.count()
+
+    @property
+    def following_count(self):
+        return self.following.count()
+
+    @property
+    def post_count(self):
+        return self.images.count()
+
+    def new_follow_notify(self, user):
+        from notification.models import Notification
+        Notification.objects.create(creator=user, to=self, notification_type='follow')
