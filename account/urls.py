@@ -6,7 +6,7 @@ from account.views import ExploreUsers, FollowUser, UnFollowUser, Search, UserPr
 app_name = "account"
 
 urlpatterns = [
-    path('explore/$', ExploreUsers.as_view(), name='explore_users'),
+    path('explore/', ExploreUsers.as_view(), name='explore_users'),
     path('<int:user_id>/follow/', FollowUser.as_view(), name='follow_user'),
     path('<int:user_id>/unfollow/', UnFollowUser.as_view(), name='unfollow_user'),
     path('search/', Search.as_view(), name='search_user'),
