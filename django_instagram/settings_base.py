@@ -37,7 +37,8 @@ THIRD_PARTY_APPS = [
 ]
 
 LOCAL_APPS = [
-    'user'
+    'account',
+    'base'
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
@@ -107,3 +108,5 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
+
+AUTH_USER_MODEL = 'account.User'
