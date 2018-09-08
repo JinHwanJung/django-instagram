@@ -39,7 +39,8 @@ THIRD_PARTY_APPS = [
 LOCAL_APPS = [
     'account',
     'base',
-    'image'
+    'image',
+    'taggit'
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
