@@ -5,6 +5,9 @@ from base.models import TimeStampedModel
 
 
 class Image(TimeStampedModel):
+    class Meta:
+        ordering = ['-created_date']
+
     file = models.ImageField()
     location = models.CharField(max_length=140)
     creator = models.ForeignKey(User, null=True, related_name='images', on_delete=models.PROTECT)
