@@ -131,3 +131,4 @@ REST_FRAMEWORK = {
 }
 
 REST_USE_JWT = True
+SITE_ID = 1
