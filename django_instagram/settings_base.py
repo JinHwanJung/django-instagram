@@ -34,8 +34,10 @@ DJANGO_APPS = [
 
 THIRD_PARTY_APPS = [
     'rest_framework',
+    'rest_framework.authtoken',
     'taggit',
     'taggit_serializer',
+    'rest_auth',
 ]
 
 LOCAL_APPS = [
