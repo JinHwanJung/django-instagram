@@ -12,7 +12,7 @@ class ListUserSerializer(serializers.ModelSerializer):
 
 
 class UserProfileSerializer(serializers.ModelSerializer):
-    images = UserProfileImageSerializer(many=True)
+    images = UserProfileImageSerializer(many=True, read_only=True)
     followers_count = serializers.ReadOnlyField()
     following_count = serializers.ReadOnlyField()
     post_count = serializers.ReadOnlyField()
