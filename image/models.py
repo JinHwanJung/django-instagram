@@ -19,9 +19,12 @@ class Image(TimeStampedModel):
     def like_count(self):
         return self.likes.count()
 
+    @property
+    def comment_count(self):
+        return self.comments.count()
+
 
 class Comment(TimeStampedModel):
-
     message = models.TextField()
     creator = models.ForeignKey(User, null=True, on_delete=models.PROTECT)
     image = models.ForeignKey(Image, null=True, related_name='comments', on_delete=models.PROTECT)
