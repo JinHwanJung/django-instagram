@@ -5,3 +5,5 @@ Pillow==5.2.0
 pytz==2018.5
 pyjwt==1.6.4
 djangorestframework-jwt==1.11.0
+django-taggit-serializer==0.1.7
+six==1.11.0
