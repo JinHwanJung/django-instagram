@@ -101,5 +101,24 @@ class Search(APIView):
 
 class ChangePassword(APIView):
     def put(self, request, username):
-        # 구현중...
-        pass
+        user = request.user
+        if user.username != username:
+            return Response(status.HTTP_401_UNAUTHORIZED)
+
+        current_password = request.data.get("current_password", None)
+        new_password = request.data.get("new_password", None)
+
+        if not current_password and current_password != 0:
+            return Response(status.HTTP_400_BAD_REQUEST)
+
+        if not new_password and new_password != 0:
+            return Response(status.HTTP_400_BAD_REQUEST)
+
+        is_correct = user.check_password(current_password)
+
+        if is_correct:
+            user.set_password(new_password)
+            user.save()
+            return Response(status.HTTP_200_OK)
+        else:
+            return Response(status.HTTP_400_BAD_REQUEST)
