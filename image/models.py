@@ -15,6 +15,10 @@ class Image(TimeStampedModel):
     caption = models.TextField()
     tags = TaggableManager()
 
+    @property
+    def like_count(self):
+        return self.likes.count()
+
 
 class Comment(TimeStampedModel):
 
