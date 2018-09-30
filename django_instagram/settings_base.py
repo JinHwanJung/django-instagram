@@ -35,13 +35,23 @@ DJANGO_APPS = [
 
 THIRD_PARTY_APPS = [
     'rest_framework',
+
+    # rest-auth
     'rest_framework.authtoken',
-    'taggit',
-    'taggit_serializer',
     'rest_auth',
+
+    # Registration
     'allauth',
     'allauth.account',
     'rest_auth.registration',
+
+    # Social Authentication
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.facebook',
+
+    # related HashTag
+    'taggit',
+    'taggit_serializer',
 ]
 
 LOCAL_APPS = [
