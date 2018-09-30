@@ -36,6 +36,9 @@ DJANGO_APPS = [
 THIRD_PARTY_APPS = [
     'rest_framework',
 
+    #####################################################################
+    # https://django-rest-auth.readthedocs.io/en/latest/installation.html
+
     # rest-auth
     'rest_framework.authtoken',
     'rest_auth',
@@ -48,6 +51,8 @@ THIRD_PARTY_APPS = [
     # Social Authentication
     'allauth.socialaccount',
     'allauth.socialaccount.providers.facebook',
+
+    #####################################################################
 
     # related HashTag
     'taggit',
