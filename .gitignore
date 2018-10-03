@@ -100,3 +100,7 @@ base/admins.py/
 celerybeat-schedule.*
 file_log.txt
 .pytest_cache/
+
+# client
+node_modules
+yarn.lock
