@@ -1,2 +1,3 @@
-import Timer from './presenter'
+import Timer from './presenter';
+
 export default Timer;
