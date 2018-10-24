@@ -104,3 +104,4 @@ file_log.txt
 # client
 node_modules
 yarn.lock
+.expo
