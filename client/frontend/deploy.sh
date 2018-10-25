@@ -8,7 +8,8 @@ yarn add sass-loader node-sass
 
 # eslint
 npm install -g eslint
-eslint --lnit  ## 일단은 popular guid 에서 airbnb 스타일 가이드를 따름
+eslint --lnit  ## 일단은 popular guid 에서 선택
+# https://eslint.org/docs/user-guide/configuring (린트설정 참고)
 ## 추가로 아래도 설치해서 WebStom (preference -> Languges & Framework -> ESLint) 에 연결
 sudo npm install eslint-plugin-react eslint-plugin-jsx-a11y eslint-plugin-import -g
 sudo npm install -g eslint-config-airbnb
