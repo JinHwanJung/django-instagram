@@ -1,5 +1,5 @@
 import React from 'react';
-import Timer from './components/timer';
+import Timer from './components/timer/index';
 
 
 export default class App extends React.Component {

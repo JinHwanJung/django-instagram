@@ -12,3 +12,4 @@ sudo npm install expo-cli --global
 expo init practice-timer-app
 
 # Npm
+# Expo Doc : https://docs.expo.io/versions/latest/
