@@ -12,4 +12,5 @@ sudo npm install expo-cli --global
 expo init practice-timer-app
 
 # Npm
+# React-Native : http://facebook.github.io/react-native/
 # Expo Doc : https://docs.expo.io/versions/latest/
