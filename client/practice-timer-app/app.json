@@ -1,4 +1,7 @@
 {
   "displayName": "practice-timer-app",
-  "name": "emptyprojecttemplate"
+  "name": "emptyprojecttemplate",
+  "expo": {
+    "sdkVersion": "18.0.0"
+  }
 }
