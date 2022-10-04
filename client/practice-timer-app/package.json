@@ -7,7 +7,7 @@
     "ios": "react-native run-ios"
   },
   "dependencies": {
-    "expo": "^30.0.1",
+    "expo": "^46.0.14",
     "react": "16.3.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-30.0.0.tar.gz",
     "react-redux": "^5.1.0",
